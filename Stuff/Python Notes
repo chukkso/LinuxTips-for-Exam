@@ -1,4 +1,4 @@
-Lecture: Data Types - Strings and Numbers
+## Lecture: Data Types - Strings and Numbers
 
 https://www.tutorialspoint.com/python/python_basic_operators.htm
 https://www.learnpython.org/en/Loops
@@ -26,7 +26,7 @@ Int ()
 Float()
 String() built in types for makign standard an integer , float or string  -- all from, built in.
 
-Lecture: Data Types - Booleans and None
+## Lecture: Data Types - Booleans and None
 Booleans represent truth while none represents not true in python its True or False
 You can cast things to boolean too e.g 
 >>> bool('3')      #putting a sting in the bool function
@@ -38,7 +38,7 @@ False
 >>>  # this evaluates to nothing and returns nothing
 
 
-Lecture: Data Types - Strings and Numbers
+## Lecture: Data Types - Strings and Numbers
 
 String has some functionality' and so you can methods on it since a string is an OBJECT . METHODS are functions that are attached to an object
 E.g sting
@@ -131,7 +131,7 @@ llo World!
 Hello World!Hello World!
 Hello World!TEST
 
-Lecture: Data Types - Booleans and None
+## Lecture: Data Types - Booleans and None
 
 True = a constant
 
@@ -155,12 +155,12 @@ None evaluates to nothing .. And nothing is printed out
 >>> None
 >>>
 
-Lecture: Working with Variables
+## Lecture: Working with Variables
 >>> a_word = "bacon"
 >>> a_word'bacon'
 >>> print (a_word)bacon
 
-Lecture: Lists and Tuples. (. Kinda similar to arrays in bash)
+## Lecture: Lists and Tuples. (. Kinda similar to arrays in bash)
 
 A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.
 The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator. For example −
@@ -264,7 +264,7 @@ tuple[2] = 1000    # Invalid syntax with tuple
 list[2] = 1000     # Valid syntax with l
 
 
-Lecture: Dictionaries (dicts)
+## Lecture: Dictionaries (dicts)
 
 >>> ages = { 'kevin' : 59, 'alex' : 33, 'chuks' : 35 }
 >>> ages
@@ -313,7 +313,7 @@ You cn create dictionaires any of the following ways :
 {'Iloba': 37, 'Tola': 32, 'chuks': 35}
 
 
-Lecture: Control Flow - Conditionals and Comparisons
+## ## Lecture: Control Flow - Conditionals and Comparisons
 
 >>> 1 < 2
 True
@@ -354,7 +354,7 @@ True
 
 So this is your way of testing out a code block if it is an if statement.
 
-Lecture: Control Flow - Loops
+## ## Lecture: Control Flow - Loops
 While and for loop
 
 while True:
@@ -419,7 +419,7 @@ wifey
 >>>
 
 
-Lecture: Control Flow - Logic Operations
+## Lecture: Control Flow - Logic Operations
 
 >>> not 1
 False
