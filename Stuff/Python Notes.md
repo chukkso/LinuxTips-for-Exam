@@ -535,7 +535,7 @@ print("Half of your age is %s" % (age / 2)
  
  
 ## Encapsulating Behavior Using Functions
- 
+
 1 #!/bin/python
   2
   3 height = float(raw_input("what is your height? (inches or meters) "))
@@ -548,7 +548,50 @@ print("Half of your age is %s" % (age / 2)
 10
 11 print ("Your BMI is %s" % bmi)
 12
- 
+
  
 We will correct the above to cover incase we get random entries in input so we can reprompt
 the user to re-enter the password we will do this by putting them into funtions
+
+## Lecture: Working with Environment Variables
+#!/bin/python
+
+import os
+
+stage = os.environ["STAGE"].upper()
+
+output = "We 're running in %s" % stage
+
+if stage.startswith("PROD"):
+    output = "DANGER!!! - " + output
+
+print(output)
+
+run like this : 
+[root@ChuksCentos ~]# STAGE=staging ./default.env # addign the inteded variable before runing the script
+if run by itself you get:
+./default.env
+Traceback (most recent call last):
+  File "./default.env", line 5, in <module>
+    stage = os.environ["STAGE"].upper()
+  File "/usr/lib64/python2.7/UserDict.py", line 23, in __getitem__
+    raise KeyError(key)
+KeyError: 'STAGE' .   # a key error since environ is a dictionary that is expecting a key correct this in the new script by usign the `getenv` func provided by the `os` module and by providing defaults e.g :
+
+```
+!/bin/python
+
+import os
+
+stage = os.getenv("STAGE") or "development".upper()
+
+output = "We 're running in %s" % stage
+
+if stage.startswith("PROD"):
+    output = "DANGER!!! - " + output
+
+print(output)
+```
+Best to use getenv
+
+# Lecture: Interacting with Files
